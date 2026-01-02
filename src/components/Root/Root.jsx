@@ -1,4 +1,5 @@
 import Logo from "../../assets/logo.png";
+import Home from "../Pages/Default";
 
 export default function Sidebar() {
   return (
@@ -7,9 +8,10 @@ export default function Sidebar() {
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col items-center justify-center">
           {/* Page content here */}
+          <Home />
           <label
             htmlFor="my-drawer-3"
-            className="mt-5 btn drawer-button lg:hidden"
+            className="my-5 btn drawer-button lg:hidden"
           >
             Destinations
           </label>
