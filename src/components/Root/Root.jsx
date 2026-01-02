@@ -1,21 +1,12 @@
 import Logo from "../../assets/logo.png";
-import Home from "../Pages/Default";
+import Destination from "../Pages/Destination";
 
 export default function Sidebar() {
   return (
     <>
       <div className="drawer lg:drawer-open">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex flex-col items-center justify-center">
-          {/* Page content here */}
-          <Home />
-          <label
-            htmlFor="my-drawer-3"
-            className="my-5 btn drawer-button lg:hidden"
-          >
-            Destinations
-          </label>
-        </div>
+
         <div className="drawer-side">
           <label
             htmlFor="my-drawer-3"
@@ -53,6 +44,17 @@ export default function Sidebar() {
               <img src={Logo} className="w-fit" alt="" />
             </div>
           </ul>
+        </div>
+        <div className="drawer-content flex flex-col items-center ">
+          {/* Page content here */}
+          {/* <Home /> */}
+          <Destination />
+          <label
+            htmlFor="my-drawer-3"
+            className="my-5 btn drawer-button lg:hidden"
+          >
+            Destinations
+          </label>
         </div>
       </div>
     </>
